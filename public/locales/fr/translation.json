@@ -1,0 +1,915 @@
+{
+  "commoncomponents": {
+    "button": {
+      "login": {
+        "dev": {
+          "account": {
+            "login": "Se connecter en mode Dev"
+          }
+        },
+        "regular": {
+          "login": "Se connecter"
+        }
+      },
+      "run": {
+        "protocol": {
+          "text": "Lancer le protocole"
+        },
+        "scenario": {
+          "text": "Lancer le scénario"
+        }
+      },
+      "change": {
+        "language": "Changer de langue"
+      },
+      "create": {
+        "scenario": {
+          "label": "Créer",
+          "tooltip": {
+            "disabled": "Veuillez sauver ou annuler les modifications en cours avant de créer un nouveau scénario"
+          }
+        }
+      },
+      "scenario": {
+        "parameters": {
+          "disabledEditTooltip": {
+            "running": "Les paramètres ne peuvent pas être édités pendant que la simulation tourne",
+            "rejected": "Ce scénario est rejeté, vous ne pouvez pas éditer ses paramètres",
+            "validated": "Ce scénario est validé, vous ne pouvez pas éditer ses paramètres",
+            "noTabs": "Pas de paramètres à éditer"
+          },
+          "discard": "ABANDONNER",
+          "edit": "Éditer les parameters",
+          "launch": "LANCER",
+          "save": "SAUVEGARDER",
+          "update": {
+            "launch": "SAUVEGARDER ET LANCER"
+          },
+          "cancel": "Arrêter"
+        }
+      }
+    },
+    "card": {
+      "protocol": {
+        "parameters": {
+          "text": {
+            "driver": {
+              "name": "Nom du driver"
+            },
+            "population": {
+              "size": "Taille de population"
+            },
+            "total": {
+              "simulations": "Nombre de simulations"
+            }
+          },
+          "title": {
+            "protocol": {
+              "parameters": "Parametres du protocole"
+            }
+          }
+        }
+      },
+      "simulation": {
+        "parameters": {
+          "text": {
+            "alert": {
+              "simulation": {
+                "launched": "Simulation lancée avec succès"
+              }
+            },
+            "engine": {
+              "name": "Nom du simulator"
+            },
+            "simulation": {
+              "name": "Nom de la simulation"
+            }
+          },
+          "title": {
+            "simulation": {
+              "parameters": "Parametres du simulator"
+            }
+          }
+        }
+      }
+    },
+    "cytoviz": {
+      "elementDetails": "Détails",
+      "loading": "Chargement...",
+      "noSelectedElement": "Sélectionnez un noeud ou un lien pour afficher ses informations",
+      "settings": {
+        "compactMode": "Mode compact",
+        "layout": "Agencement",
+        "title": "Paramètres",
+        "spacingFactor": "Espacement",
+        "zoomLimits": "Zoom min/max",
+        "opensettings": "Ouvrir les paramètres",
+        "closesettings": "Fermer les paramètres",
+        "showStats": "Statistiques cytoscape"
+      },
+      "elementData": {
+        "dictKey": "Clé",
+        "dictValue": "Valeur",
+        "noData": "Aucune donnée à afficher pour cet élément.",
+        "attributes": {
+          "PlantName": "Usine"
+        }
+      },
+      "accordion": {
+        "nodeDetails": "Détails du nœud",
+        "findNode": {
+          "headline": "Trouver un nœud",
+          "searchByID": "Recherche par ID"
+        },
+        "exploreGraph": {
+          "headline": "Explorer un sous-graphe",
+          "startingNodes": "Sélectionner le(s) nœud(s) de départ",
+          "startingNodesError": "Sélectionnez au moins un nœud",
+          "limitDepth": "Limiter la profondeur de recherche",
+          "limitDepthError": "Entrez un nombre entier positif",
+          "flowDirection": "Choisir la direction du flux",
+          "flowDirectionError": "Sélectionnez au moins un",
+          "inEdges": "Flux entrants",
+          "outEdges": "Flux sortants",
+          "excludeEdges": "Exclure les types de relation suivants",
+          "compoundNeighbors": "Inlcure les autres entités de la compound",
+          "launch": "Explorer"
+        }
+      },
+      "placeholder": {
+        "error": "Une erreur est survenue. Impossible de visualiser le jumeau numérique.",
+        "noScenario": "Aucun scénario créé. Vous pouvez créer un scénario dans la vue Scénario."
+      }
+    },
+    "datasetmanager": {
+      "metadata": {
+        "author": "Auteur",
+        "apiUrl": "URL de l'API",
+        "copied": "Copié",
+        "creationDate": "Date de création",
+        "description": "Description",
+        "descriptionPlaceholder": "Description du dataset",
+        "parent": "Parent",
+        "refreshDate": "Dernière modification",
+        "sourceType": "Source",
+        "tags": "Tags",
+        "tagsPlaceholder": "Nouveau tag",
+        "unknown": "inconnu"
+      },
+      "dialogs": {
+        "refresh": {
+          "title": "Écraser les données ?",
+          "body": "Vos données seront perdues, écrasées par les données importées.",
+          "checkbox": "Ne plus me demander.",
+          "overwriteButton": "Écraser"
+        },
+        "delete": {
+          "title": "Supprimer un dataset ?",
+          "body": "Voulez-vous supprimer <i>{{datasetName}}</i> ? Cette action est irréversible.{{impactedScenariosWarning}}",
+          "bodyWithChildren": "Les datasets enfants suivants seront également supprimés:",
+          "confirmButton": "Supprimer",
+          "impactedScenariosWarning": "Les scénarios utilisant ce dataset ne pourront pas être relancés, mais les résultats déjà disponibles resteront visibles."
+        },
+        "cancel": "Annuler"
+      },
+      "overview": {
+        "actions": {
+          "deleteButtonTooltip": "Supprimer",
+          "shareButtonTooltip": "Partager",
+          "refreshButtonTooltip": "Mettre à jour",
+          "createSubdatasetButtonTooltip": "Créer un sous-dataset"
+        },
+        "attributesLabel": "Attributs:",
+        "categoryTypes": {
+          "entity": "Entité",
+          "relationship": "Relations"
+        },
+        "kpiState": {
+          "failed": "La requête pour cet indicateur a échoué",
+          "loading": "Chargement",
+          "unknown": "État inconnu"
+        },
+        "title": "Aperçu",
+        "placeholder": {
+          "error": "Une erreur est survenue pendant l'import des données",
+          "empty": "Votre dataset est vide",
+          "apiLink": "Vous pouvez utiliser l'<1>API Cosmo Tech</1> pour charger des données",
+          "loading": "Données en cours d'importation, veuillez patienter",
+          "noDatasetSelected": "Aucun dataset sélectionné. Vous pouvez sélectionner un dataset depuis le panneau latéral gauche.",
+          "noKpis": {
+            "title": "Le dataset est prêt",
+            "subtitle": "Vous pouvez l'utiliser pour créer de nouveaux scénarios"
+          },
+          "unknown": "Le dataset a un statut inconnu, si le problème persiste, merci de contacter votre administrateur",
+          "retryButton": "Réessayer",
+          "rollbackButton": "Restaurer",
+          "abortButton": "Arrêter"
+        }
+      },
+      "wizard": {
+        "title": "Créer un dataset",
+        "subDatasetCreationTitle": "Créer un sous-dataset",
+        "stepOne": "Métadonnées",
+        "stepTwo": "Type de la source du dataset",
+        "subdatasetStepTwo": "Filtre",
+        "firstScreen": {
+          "title": "Veuillez renseigner des métadonnées de votre dataset",
+          "name": "Nom",
+          "tags": "Tags",
+          "description": "Description",
+          "subtitle": {
+            "parentDataset": "Dataset parent : {{parentDatasetName}}"
+          }
+        },
+        "secondScreen": {
+          "subtitle": "Veuillez renseigner la source des données",
+          "subdatasetSubtitle": "Veuillez sélectionner le filtre",
+          "dataSourceType": {
+            "label": "Source",
+            "subdatasetLabel": "Filtre",
+            "azureStorage": "Azure Storage",
+            "local": "Fichier local",
+            "adt": "Azure Digital Twin",
+            "none": "Dataset vide"
+          },
+          "azureStorage": {
+            "accountName": "Nom du compte",
+            "containerName": "Nom du container",
+            "path": "Chemin"
+          }
+        },
+        "buttons": {
+          "previous": "Précédent",
+          "next": "Suivant",
+          "create": "Créer"
+        }
+      },
+      "searchBar": {
+        "label": "Rechercher..."
+      },
+      "noDatasets": {
+        "title": "Vous n'avez aucun dataset pour le moment",
+        "body": "Cliquez sur <createDatasetButton /> pour importer vos premières données",
+        "readOnlySubtitle": "Vous n'avez pas les permissions nécessaires pour créer des datasets. Veuillez contacter votre administrateur."
+      },
+      "create": {
+        "label": "Créer",
+        "tooltip": "Créer un nouveau dataset"
+      },
+      "backdrop": {
+        "deleting": "Suppression du dataset en cours"
+      }
+    },
+    "iframe": {
+      "title": "Tableau de bord",
+      "scenario": {
+        "results": {
+          "card": {
+            "title": "Résultats"
+          },
+          "iframe": {
+            "title": "Resultats simulation supply chain"
+          },
+          "label": {
+            "no": {
+              "result": "Pas de résultats pour ce scénario"
+            },
+            "error": "Une erreur est survenue lors de l'exécution de ce scénario",
+            "running": "Scénario en cours d'exécution...",
+            "dataInTransfer": "Transfert des résultats en cours...",
+            "uninitialized": "Le scénario n'a pas encore été lancé"
+          },
+          "button": {
+            "downloadLogs": "Télécharger les logs",
+            "logs": "Logs",
+            "refresh": "Rafraîchir (sera ensuite indisponible pendant 15 secondes)"
+          },
+          "warning": {
+            "notSync": "Le scénario a été modifié depuis son dernier lancement, les données du tableau de bord risquent de ne plus être valides"
+          }
+        },
+        "noscenario": {
+          "title": "Aucun scénario n'a encore été créé",
+          "label": "Vous pouvez créer un scénario en cliquant sur le bouton \"CRÉER\"",
+          "dashboardsViewLabel": "Vous pouvez créer un scénario depuis la vue Scénario"
+        },
+        "nodashboard": {
+          "label": "Aucun tableau de bord n'est configuré pour ce type de scénario"
+        },
+        "unknownStatus": {
+          "label": "Le scénario a un statut inconnu, si le problème persiste, merci de contacter votre administrateur"
+        },
+        "resultsDisplayDisabled": "La simulation s'est terminée avec succès mais l'affichage des résultats est désactivé",
+        "error": {
+          "unknown": {
+            "details": "Une erreur est survenue lors de la récupération des informations des rapports PowerBI",
+            "label": "Erreur inconnue"
+          }
+        }
+      },
+      "errorPlaceholder": {
+        "title": "Erreur inattendue",
+        "description": "Une erreur est survenue lors de l'affichage des rapports PowerBI. Si le problème persiste, veuillez contacter un administrateur."
+      }
+    },
+    "scenariomanager": {
+      "treelist": {
+        "node": {
+          "dataset_one": "Dataset :",
+          "dataset_other": "Datasets :",
+          "runTemplate": "Type de scénario :",
+          "status": {
+            "label": "Statut :",
+            "successful": "Succès",
+            "running": "En cours",
+            "dataingestioninprogress": "Transfert des résultats",
+            "failed": "Erreur",
+            "created": "Créé"
+          },
+          "description": "Description",
+          "tags": "Tags",
+          "action": {
+            "delete": "Supprimer ce scénario",
+            "redirect": "Ouvrir dans la vue scénario",
+            "edit": "Editer le nom du scenario",
+            "descriptionPlaceholder": "Description du scénario",
+            "tagsEdition": "Modifiez les tags"
+          },
+          "text": {
+            "search": "Filtrer..."
+          }
+        }
+      },
+      "toolbar": {
+        "expandAll": "Tout déplier",
+        "collapseAll": "Tout replier",
+        "expandTree": "Déplier l'arborescence"
+      }
+    },
+    "text": {
+      "application": {
+        "title": "Exemple d'Application Web Azure"
+      },
+      "contact": {
+        "get": {
+          "account": "Vous n'avez pas de compte ?"
+        }
+      },
+      "link": {
+        "cosmotech": "Veuillez contacter Cosmo Tech"
+      },
+      "no": {
+        "permission": "Vous n'avez pas les droits suffisants pour accéder à cette page."
+      }
+    },
+    "dialog": {
+      "confirm": {
+        "delete": {
+          "button": {
+            "cancel": "Annuler",
+            "confirm": "Confirmer"
+          },
+          "description": "Cette opération est irréversible. Les datasets ne seront pas supprimés, mais les paramètres du scénario seront perdus. Si le scénario a des enfants, ils seront remontés d'un niveau dans la hiérarchie des scénarios.",
+          "title": "Confirmer la suppression du scénario '{{scenarioName}}' ?"
+        }
+      },
+      "create": {
+        "scenario": {
+          "text": {
+            "title": "Créer un scénario"
+          },
+          "input": {
+            "scenarioname": {
+              "label": "Nom du scénario",
+              "error": {
+                "label": "Erreur",
+                "empty": "Le nom du scénario ne doit pas être vide",
+                "existing": "Le nom du scénario existe déjà",
+                "forbiddenchars": "Le nom du scénario doit commencer par une lettre ou un chiffre, et ne peut contenir que des lettres, chiffres, espaces, underscores, tirets et points."
+              }
+            },
+            "description": "Description",
+            "tags": "Tags"
+          },
+          "dropdown": {
+            "parentscenario": {
+              "label": "Scénario parent",
+              "placeholder": "Sélectionner un scénario parent"
+            },
+            "scenariotype": {
+              "label": "Type de scénario",
+              "placeholder": "Sélectionner un type de scénario"
+            },
+            "dataset": {
+              "label": "Dataset",
+              "placeholder": "Sélectionner un dataset"
+            }
+          },
+          "checkbox": {
+            "scenarioMaster": {
+              "label": "Master"
+            }
+          },
+          "button": {
+            "create": "Créer",
+            "cancel": "Annuler"
+          }
+        }
+      },
+      "share": {
+        "button": {
+          "label": "Partager",
+          "tooltip": "Modifier l'accès",
+          "editModeTooltip": "Veuillez sauver ou annuler les modifications en cours avant de modifier les permissions d'accès du scénario"
+        },
+        "dialog": {
+          "buttons": {
+            "share": "Partager",
+            "cancel": "Annuler",
+            "close": "Fermer",
+            "done": "Confirmer"
+          },
+          "title": "Partager ",
+          "readOnlyTitle": "Permissions pour ",
+          "select": {
+            "addPeople": "Ajouter un utilisateur",
+            "userSelected": "Utilisateur sélectionné"
+          },
+          "editor": {
+            "usersAccess": "Accès par utilisateur",
+            "generalAccess": "Accès général",
+            "removeAccess": "Supprimer l'accès spécifique",
+            "helperText": {
+              "admin": "Tout le monde dans ce workspace est admin",
+              "viewer": "Tout le monde dans ce workspace est visiteur",
+              "validator": "Tout le monde dans ce workspace est validateur",
+              "editor": "Tout le monde est éditeur",
+              "none": "Le scénario n'est pas visible par les autres utilisateurs",
+              "datasetNone": "Le dataset n'est pas visible par les autres utilisateurs"
+            }
+          },
+          "error": {
+            "noAdmin": "Le scénario doit avoir au moins un admin",
+            "datasetNoAdmin": "Le dataset doit avoir au moins un admin"
+          },
+          "add": {
+            "deniedPermissions": "Permissions accordées",
+            "grantedPermissions": "Permissions non accordées",
+            "rolesTitle": "Rôles",
+            "rolesHelperText": "Sélectionnez un rôle"
+          }
+        },
+        "roles": {
+          "admin": "Admin",
+          "editor": "Editeur",
+          "none": "Restreint",
+          "viewer": "Visiteur",
+          "validator": "Validateur"
+        },
+        "permissions": {
+          "create_children": "Créer des scénarios enfants",
+          "write_security": "Modifier les permissions",
+          "validate": "Modifier le statut de validation",
+          "write": "Modifier les paramètres et renommer le scénario",
+          "read": "Voir le scénario et ses résultats",
+          "read_security": "Voir les permissions des autres utilisateurs",
+          "launch": "Lancer le scénario",
+          "delete": "Supprimer le scénario"
+        },
+        "datasetPermissions": {
+          "read": "Voir le dataset et créer un sous-dataset",
+          "write": "Editer et rafraîchir le dataset",
+          "read_security": "Voir les permissions des autres utilisateurs",
+          "write_security": "Modifier les permissions",
+          "delete": "Supprimer le dataset"
+        }
+      },
+      "sessionTimeout": {
+        "body": "Aucune activité détectée. Vous allez être automatiquement déconnecté dans {{seconds}} secondes...",
+        "cancel": "Rester connecté",
+        "logOut": "Se déconnecter",
+        "loggingOut": "Déconnexion en cours...",
+        "title": "Session inactive"
+      }
+    },
+    "banner": {
+      "unknownError": "Erreur inconnue",
+      "dataset": "Le dataset n'a pas pu être téléchargé.",
+      "datasetsFetchFailed": "Une erreur inconnue est survenue lors de la récupération des datasets.",
+      "logs": "Le fichier des logs n'a pas pu être téléchargé.",
+      "create": "Le scénario n'a pas pu être créé.",
+      "delete": "Le scénario n'a pas pu être supprimé.",
+      "rename": "Le scénario n'a pas pu être renommé.",
+      "updateData": "Le scénario n'a pas pu être mis à jour.",
+      "updatePermissions": "Certaines permissions du scénario n'ont pas pu être modifiées.",
+      "run": "Un problème est survenu, le scénario n'a pas pu être lancé.",
+      "update": "Un problème est survenu pendant la modification du scénario, les nouveaux paramètres n'ont pas été sauvegardés.",
+      "incompleteRun": "Un problème est survenu pendant la modification du dataset; les nouveaux paramètres ne sont pas pris en compte et le scénario n'a pas pu être lancé.",
+      "datasetUpdate": "Un problème est survenu pendant la modification du dataset; les nouveaux paramètres ne sont pas pris en compte.",
+      "network": "Problème réseau, veuillez vérifier votre connexion Internet",
+      "resetStatusValidation": "Le statut du scénario n'a pas pu être réinitialisé.",
+      "validateScenario": "Le scénario n'a pas pu être validé.",
+      "rejectScenario": "Le scénario n'a pas pu être rejeté.",
+      "launchCanceled": "Une erreur est survenue pendant la sauvegarde ; les nouveaux paramètres n'ont pas pu être enregistrés et le scénario n'a pas été lancé.",
+      "tooLongErrorMessage": "Le message d'erreur détaillé est trop long pour être affiché. Pour le lire, veuiller utiliser le bouton COPIER et le coller dans votre éditeur de texte préféré.",
+      "fetchSolution": "Un problème est survenu lors de la tentative d'accès à la solution {{ solutionId }}.",
+      "button": {
+        "dismiss": "Fermer",
+        "copy": {
+          "label": "Copier",
+          "copied": "Copié"
+        }
+      },
+      "openScenario": "Le scénario n'a pu etre ouvert.",
+      "noPermissionDetail": "Vous n'avez pas la permission d'accéder au scénario #{{scenarioId}} du workspace #{{workspaceId}} de l'organisation #{{organizationId}}",
+      "datasetNotDeleted": "Le dataset n'a pas pu être supprimé",
+      "datasetNotCreated": "Le dataset n'a pas pu être créé",
+      "datasetCreationFileUploadFailed": "Échec de l'envoi des données lors de la création du dataset",
+      "datasetFileReuploadFailed": "Échec de l'envoi des données lors de la mise à jour du dataset",
+      "datasetNotLinked": "Une erreur est survenue lors de l'ajout dans le workspace du dataset nouvellement créé ({{datasetId}}). Veuillez créer un nouveau dataset, et contacter votre administrateur si le problème persiste.",
+      "datasetNotUpdated": "Le dataset n'a pas pu être mis à jour",
+      "datasetNotRefreshed": "Une erreur est survenue pendant la mise à jour du dataset",
+      "datasetRefreshError": "Une erreur est survenue pendant la mise à jour du dataset {{datasetId}}",
+      "runnerNotCreated": "Le runner n'a pas pu être crée",
+      "runnerFileNotUploaded": "Echec de l'envoi du fichier de runner {{runnerFile}}",
+      "runnerStopError": "Impossible d'arrêter le runner {{runnerId}}",
+      "datasetSecurityNotUpdated": "Les permissions du dataset {{datasetId}} n'ont pas pu être modifiées",
+      "runnerNotUpdated": "Le runner n'a pas pu être mis à jour",
+      "twingraphNotCreated": "Une erreur est survenue pendant la creation du twingraph",
+      "twingraphStatusPollingFailed": "Une erreur est survenue lors de la mise à jour du statut du dataset {{datasetDetails}}",
+      "twingraphDataNotRestored": "Les données du twingraph n'ont pas pu être restaurées"
+    }
+  },
+  "genericcomponent": {
+    "dateInput": {
+      "error": {
+        "minDateMessage": "La date minimale n'est pas respectée",
+        "maxDateMessage": "La date maximale n'est pas respectée",
+        "invalidDateMessage": "Format de date incorrect"
+      }
+    },
+    "enumInput": {
+      "fetchingDynamicValues": "Récupération des valeurs en cours...",
+      "fetchingDynamicValuesError": "Impossible de récupérer les valeurs dynamiques depuis la source de données"
+    },
+    "multiSelect": {
+      "noValues": "Pas de valeurs sélectionnées"
+    },
+    "uploadfile": {
+      "button": {
+        "browse": "Parcourir",
+        "update": "Mettre à jour"
+      },
+      "tooltip": {
+        "isvalidfile": "Erreur: la colonne requiert une chaine de caractères",
+        "delete": "Supprimer le fichier"
+      },
+      "noFileMessage": "Aucun",
+      "fileNamePlaceholder": "fichier {{fileExtension}}"
+    },
+    "scenarioSelect": {
+      "noValues": "Aucun scénario sélectionné",
+      "noOptions": "Aucun scénario disponible"
+    },
+    "numberInput": {
+      "fetchingValue": "Récupération de la valeur en cours..."
+    },
+    "dynamicValues": {
+      "noDataset": "Aucun dataset n'est associé au scénario, impossible de récupérer les valeurs dynamiques.",
+      "notExistingDataset": "Impossible de récupérer les valeurs dynamiques: le dataset associé au scénario n'existe pas.",
+      "notTwingraphDataset": "Impossible de récupérer les valeurs dynamiques: le chargement dynamique des valeurs est disponible uniquement pour les datasets du type twingraph.",
+      "ingestionStatusError": "Impossible de récupérer les valeurs dynamiques: le statut du dataset est {{ingestionStatus}}.",
+      "resultKeyError": "Le résultat de la requête ne contient pas de propriété {{resultKey}}. Cela provient probablement d'une erreur dans la configuration de resultKey, veuillez vérifier la solution.",
+      "queryError": "Impossible de récupérer les valeurs dynamiques depuis le dataset.",
+      "defaultValueDisplayed": "La valeur par défaut du paramètre est affichée."
+    },
+    "loading": {
+      "line": {
+        "workspace": {
+          "list": {
+            "title": "Chargement des workspaces"
+          },
+          "current": {
+            "title": "Chargement du workspace"
+          }
+        },
+        "organization": {
+          "current": {
+            "title": "Chargement de l'organisation"
+          }
+        },
+        "solution": {
+          "current": {
+            "title": "Chargement de la solution"
+          }
+        },
+        "dataset": {
+          "list": {
+            "title": "Chargement de la liste des datasets"
+          }
+        },
+        "scenario": {
+          "list": {
+            "title": "Chargement de la liste des scénarios"
+          },
+          "current": {
+            "title": "Mise en place du scénario courant"
+          }
+        },
+        "powerbi": {
+          "title": "Connexion à PowerBI"
+        },
+        "runtemplate": {
+          "list": {
+            "title": "Chargement des types de scénarios"
+          }
+        }
+      }
+    },
+    "button": {
+      "login": {
+        "msal": {
+          "title": "Se connecter avec Microsoft"
+        }
+      }
+    },
+    "userinfo": {
+      "button": {
+        "change": {
+          "language": "Changer la langue"
+        },
+        "logout": "Se déconnecter"
+      }
+    },
+    "helpmenu": {
+      "title": "Aide",
+      "documentation": "Documentation",
+      "support": "Contacter le support",
+      "about": "A propos"
+    },
+    "switchtheme": {
+      "light": "Passer en mode clair",
+      "dark": "Passer en mode sombre"
+    },
+    "workspaceselector": {
+      "homebutton": "Workspaces",
+      "switch": "Changer",
+      "card": {
+        "button": {
+          "open": "Ouvrir"
+        }
+      },
+      "placeholder": {
+        "noworkspace": {
+          "title": "Aucun workspace n'est accessible",
+          "description": {
+            "reason": "Ceci peut signifier que vous n'avez pas les permissions nécessaires pour accéder aux workspaces existants.",
+            "contact": "Si vous pensez qu'il s'agit d'une erreur, veuillez contacter votre administrateur."
+          }
+        }
+      },
+      "error": {
+        "title": "Erreur d'initialisation de la web app",
+        "message": "Le workspace avec l'identifiant {{workspaceId}} n'existe pas dans la liste des workspaces",
+        "comment": "Vous avez été redirigé vers la liste des workspaces disponibles"
+      }
+    },
+    "dialog": {
+      "scenario": {
+        "parameters": {
+          "button": {
+            "cancel": "Annuler",
+            "validate": "Abandonner",
+            "launch": "Lancer"
+          },
+          "title": "Abandonner les modifications ?",
+          "body": "Vous allez perdre toutes les modifications que vous avez faites sur les paramètres de scénario.",
+          "confirmLaunchDialog": {
+            "title": "Lancer le scénario ?",
+            "body": "Lancer un scénario peut prendre du temps. Tous les résultats existants pour ce scénario seront écrasés.",
+            "checkbox": "Ne pas demander la prochaine fois."
+          }
+        },
+        "discardUnsaved": {
+          "title": "Abandonner les modifications ?",
+          "body": "Vous avez des paramètres non sauvegardés qui seront perdus si vous continuez.",
+          "buttons": {
+            "cancel": "Annuler",
+            "discardAndContinue": "Rejeter et continuer"
+          }
+        },
+        "stopRun": {
+          "title": "Arrêter la simulation ?",
+          "body": "Si vous arrêtez la simulation, son statut passera en Erreur.\nRemarque : les résultats précédents sont déjà perdus et ne pourront pas être affichés de nouveau.",
+          "button": {
+            "cancel": "Annuler",
+            "stop": "Arrêter"
+          }
+        }
+      },
+      "about": {
+        "title": "Exemple d'Application Web Azure",
+        "content": "La solution d'exemple de jumeaux numériques est fournie par Cosmo Tech. Vous pouvez utiliser cet example pour créer votre propre solution de jumeaux numériques",
+        "button": {
+          "close": "Fermer"
+        }
+      },
+      "technicalInfo": {
+        "title": "Informations techniques",
+        "details": "Détails",
+        "webAppVersion": "Version de la webapp :",
+        "apiVersion": "Version de l'API :",
+        "repositoryName": "Nom du dépôt de registre de conteneur :",
+        "repositoryTag": "Tag du dépôt de registre de conteneur :",
+        "simulatorVersion": "Version du simulateur :",
+        "sdkVersion": "Version du SDK :",
+        "copyButton": "Copier dans le presse-papier",
+        "notAvailableEntry": "pas disponible"
+      }
+    },
+    "text": {
+      "scenario": {
+        "saving": "Sauvegarde des données en cours",
+        "parameters": {
+          "tabs": {
+            "placeholder": "Ces paramètres sont confidentiels et vous n'avez pas les accès nécessaires pour les voir. Si vous pensez que c'est une erreur, merci de contacter l'administrateur de l'application."
+          },
+          "placeholder": "Aucun paramètre à éditer.",
+          "title": "Paramètres de scénario"
+        }
+      }
+    },
+    "table": {
+      "button": {
+        "clearErrors": "Effacer",
+        "fileImport": "Importer un fichier",
+        "csvExport": "Exporter"
+      },
+      "labels": {
+        "loading": "Chargement en cours...",
+        "fileImportError": "Échec du chargement du fichier.",
+        "queryFailedError": "La requête a échoué",
+        "maxErrorsCount": "(seulement les {{maxCount}} premiers résultats)",
+        "errorsCount_one": "{{count}} erreur:",
+        "errorsCount_other": "{{count}} erreurs:",
+        "placeholderTitle": "Importez votre premier fichier",
+        "placeholderBody": "Une fois votre fichier csv ou xlsx importé, vos données seront affichées dans un tableau interactif.",
+        "addRowPlaceholderTitle": "Importez ou créez\nvos premières données",
+        "addRowPlaceholderBody": "Importez un fichier csv ou xlsx valide, ou ajoutez une nouvelle ligne, et ainsi afficher vos données sur un tableau interactif.",
+        "configErrorPlaceholderTitle": "Erreur de configuration",
+        "noDataPlaceholderTitle": "Aucune donnée",
+        "noDataPlaceholderBody": "Pas de données à afficher.",
+        "import": "Importer",
+        "export": "Exporter",
+        "addRow": "Ajouter une nouvelle ligne",
+        "deleteRows": "Supprimer les lignes sélectionnées",
+        "fullscreen": "Plein écran",
+        "revert": "Rétablir",
+        "noDatasetsError": "Il est impossible de charger les données depuis le dataset parce que la liste des datasets est vide",
+        "noQueryError": "Il est impossible de charger les données depuis le dataset parce qu'aucune requête du twingraph n'est définie pour ce paramètre. Vous pouvez charger les données manuellement avec le bouton Importer",
+        "NoQueryErrorImportFalse": "Il est impossible de charger les données depuis le dataset parce qu'aucune requête du twingraph n'est définie pour ce paramètre.",
+        "wrongResultKeyError": "Le résultat de la requête ne contient pas de propriété {{resultKey}}. Cela provient probablement d'une erreur dans la configuration de resultKey, veuillez vérifier la solution.",
+        "wrongQueryError": "Le résultat retourné est vide. Cela provient probablement d'une erreur dans la configuration de la requête. Veuillez vérifier la solution.",
+        "unknownQueryError": "Une erreur est survenue durant la requête sur les données du tableau. Si le problème persiste, merci de contacter votre administrateur."
+      },
+      "export": {
+        "labels": {
+          "cancel": "Annuler",
+          "export": "Exporter",
+          "fileNameInputLabel": "Nom",
+          "fileTypeSelectLabel": "Type",
+          "title": "Exporter les données",
+          "exportDescription": "Le fichier sera sauvegardé sur votre ordinateur."
+        }
+      },
+      "deleteRowsDialog": {
+        "title": "Supprimer les lignes sélectionnées?",
+        "body": "Voulez-vous vraiment supprimer ces {{count}} lignes?",
+        "cancel": "Annuler",
+        "confirm": "Supprimer",
+        "checkbox": "Ne plus afficher ce message"
+      },
+      "revertDataDialog": {
+        "title": "Rétablir les données ?",
+        "body": "Cette action remplacera les données du tableau par les données initiales du dataset.",
+        "cancel": "Annuler",
+        "revert": "Rétablir",
+        "checkbox": "Ne plus afficher ce message"
+      }
+    }
+  },
+  "views": {
+    "common": {
+      "footer": {
+        "text": {
+          "companyname": "Cosmo Tech",
+          "poweredby": "Propulsé par Cosmo Tech"
+        }
+      }
+    },
+    "signin": {
+      "title": "Exemple d'Application Web Azure",
+      "error": {
+        "title": "Erreur d'authentification"
+      },
+      "info": {
+        "timeout": "Pour des raisons de sécurité, votre session a expiré, pour cause d'inactivité."
+      }
+    },
+    "accessdenied": {
+      "title": "Accès non autorisé",
+      "errormessage": "Les ressources n'existent pas ou vous n'avez pas la permission d'y accéder.",
+      "signouttimeout": "Vous allez être déconnecté automatiquement dans {{seconds}} secondes..."
+    },
+    "scenario": {
+      "dropdown": {
+        "scenario": {
+          "label": "Scénario",
+          "tooltip": {
+            "disabled": "Veuillez sauver ou annuler les modifications en cours avant de sélectionner un autre scénario"
+          }
+        }
+      },
+      "text": {
+        "scenariotype": "Type de scénario",
+        "nodataset": "Aucun",
+        "datasetNotFound": "Non trouvé"
+      },
+      "validation": {
+        "reject": "Rejeter",
+        "rejected": "Rejeté",
+        "validate": "Valider",
+        "validated": "Validé",
+        "disabledTooltip": "Veuillez sauver ou annuler les modifications en cours avant de modifier le statut de validation du scénario"
+      },
+      "redirectError": {
+        "title": "Mauvaise URL",
+        "detail": "Le scénario avec l'id {{id}} n'existe plus.",
+        "comment": "Vous avez été redirigé vers la page Scénario par défaut."
+      },
+      "scenarioRunQueryError": {
+        "comment": "Impossible de trouver le run de scénario avec l'id \"{{id}}\"."
+      },
+      "scenarioRunStatusQueryError": {
+        "comment": "Impossible de trouver le statut du run de scénario avec l'id \"{{id}}\"."
+      },
+      "scenarioRunStopError": {
+        "comment": "Impossible d'arrêter le run de scénario avec l'id \"{{id}}\""
+      },
+      "scenarioParametersValidationErrors": {
+        "required": "Ce champ est obligatoire",
+        "integer": "Cette valeur doit être un entier",
+        "minLength": "La longueur minimale de ce champ est de {{length}} caractères",
+        "maxLength": "La longueur maximale de ce champ est de {{length}} caractères",
+        "maxLengthForApi": "Ce text dépasse la longueur maximale possible pour un paramètre",
+        "minValue": "La valeur minimale de ce champ est {{minValue}}",
+        "maxValue": "La valeur maximale de ce champ est {{maxValue}}",
+        "minDate": "La date minimale est {{minDate}}",
+        "maxDate": "La date maximale est {{maxDate}}",
+        "notValid": "Le format ne correspond pas au format valide : MM/dd/YYYY",
+        "after": "Le champ {{field}} doit être strictement postérieur au champ {{constraint}}",
+        "before": "Le champ {{field}} doit être strictement antérieur au champ {{constraint}}",
+        "afterOrEqual": "Le champ {{field}} doit être postérieur ou égal au champ {{constraint}}",
+        "beforeOrEqual": "Le champ {{field}} doit être antérieur ou égal au champ {{constraint}}",
+        "greaterThan": "Le champ {{field}} doit être strictement supérieur au champ {{constraint}}",
+        "lessThan": "Le champ {{field}} doit être strictement inférieur au champ {{constraint}}",
+        "greaterThanOrEqual": "Le champ {{field}} doit être supérieur ou égal au champ {{constraint}}",
+        "lessThanOrEqual": "Le champ {{field}} doit être inférieur ou égal au champ {{constraint}}",
+        "equalTo": "Le champ {{field}} doit être égal au champ {{constraint}}",
+        "differentFrom": "Le champ {{field}} doit être différent du champ {{constraint}}",
+        "equalDate": "Le champ {{field}} doit être égal au champ {{constraint}}",
+        "differentDate": "Le champ {{field}} doit être différent du champ {{constraint}}",
+        "fileFormat": "Format de fichier non supporté"
+      }
+    }
+  },
+  "layouts": {
+    "tabs": {
+      "scenario": {
+        "tab": {
+          "title": "Vue scénario"
+        }
+      },
+      "instance": {
+        "tab": {
+          "title": "Jumeau numérique"
+        }
+      },
+      "scenariomanager": {
+        "tab": {
+          "title": "Gestionnaire de scénarios"
+        }
+      },
+      "dashboards": {
+        "tab": {
+          "title": "Tableaux de bord"
+        }
+      },
+      "datasetmanager": {
+        "tab": {
+          "title": "Gestionnaire de datasets"
+        }
+      }
+    }
+  }
+}
