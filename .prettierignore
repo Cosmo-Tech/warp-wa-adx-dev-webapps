@@ -1,0 +1,7 @@
+build
+dist
+.docz
+.github
+node_modules
+stats.html
+cypress/reports
