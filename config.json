@@ -1,7 +1,7 @@
 {
     "REACT_APP_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY": "",
     "REACT_APP_ENABLE_APPLICATION_INSIGHTS": "False",
-    "REACT_APP_APP_REGISTRATION_CLIENT_ID": "cedf53cf-71e7-4ec0-96cf-7022e3fa1c9f",
+    "REACT_APP_APP_REGISTRATION_CLIENT_ID": "e72c9d93-42ca-47eb-8406-bd39139bcf6d",
     "REACT_APP_AZURE_TENANT_ID": "e413b834-8be8-4822-a370-be619545cb49",
     "REACT_APP_COSMOTECH_API_SCOPE": "https://warp.api.cosmotech.com/wa-adx-dev/.default",
     "REACT_APP_DEFAULT_BASE_PATH": "https://warp.api.cosmotech.com/wa-adx-dev/v3",
