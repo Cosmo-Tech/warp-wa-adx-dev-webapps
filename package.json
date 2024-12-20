@@ -8,7 +8,7 @@
     "@cosmotech/core": "^1.19.1",
     "@cosmotech/ui": "^9.5.2",
     "@emotion/react": "^11.13.0",
-    "@emotion/styled": "^11.13.0",
+    "@emotion/styled": "^11.14.0",
     "@microsoft/applicationinsights-web": "^3.3.4",
     "@mui/icons-material": "^5.16.5",
     "@mui/lab": "^5.0.0-alpha.173",
